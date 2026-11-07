@@ -1,10 +1,10 @@
-# Professional Video Editor for Codex
+# Professional Video Editor
 
-> **A disciplined, production-minded video editing workflow for Codex.**
+> **A disciplined, production-minded video editing workflow for Codex, Claude and compatible assistants.**
 >
 > Analyze the footage, make an edit plan, execute deliberately, validate the export and deliver with confidence.
 
-[![Codex Skill](https://img.shields.io/badge/Codex-Skill-111827?style=flat-square)](#quick-start)
+[![AI Assistant Skill](https://img.shields.io/badge/AI%20Assistant-Compatible-111827?style=flat-square)](#quick-start)
 [![License: MIT](https://img.shields.io/badge/License-MIT-16a34a?style=flat-square)](LICENSE)
 [![Workflow](https://img.shields.io/badge/Workflow-plan--edit--verify-2563eb?style=flat-square)](#the-workflow)
 
@@ -12,7 +12,7 @@
 
 A good edit is not a collection of transitions. It is a clear sequence of decisions: understand the footage, define the objective, plan the story, edit with purpose and review the final export.
 
-**Professional Video Editor for Codex** is an open-source skill that guides Codex through that workflow inside the current workspace. It helps with analysis, edit planning, rhythm, continuity, captions, sound, color, rendering and quality control, without creating a separate website or assuming that flashy effects improve every video.
+**Professional Video Editor** is an open-source skill that guides Codex, Claude and compatible assistants through that workflow inside the current workspace. It helps with analysis, edit planning, rhythm, continuity, captions, sound, color, rendering and quality control, without creating a separate website or assuming that flashy effects improve every video.
 
 ## What it does
 
@@ -52,8 +52,8 @@ When compatible tools are available, the workflow checks that the export decodes
 ## Quick start
 
 1. Put the video files in the active workspace.
-2. Install this folder as `professional-video-editor` in the skills directory used by your Codex setup.
-3. Ask Codex to use the skill and give it a focused brief.
+2. Install this folder as `professional-video-editor` in the skills directory used by Codex, Claude or another compatible assistant.
+3. Ask your assistant to use the skill and give it a focused brief.
 
 ```text
 Use professional-video-editor to turn these interview clips into a 60-second
@@ -104,7 +104,7 @@ Scripts process local files. They do not upload media, install dependencies or s
 
 - The skill guides the workflow. It does not bundle or automatically install FFmpeg, codecs, editing apps or AI services.
 - `FFmpeg` and `ffprobe` must be available to use the included inspection and validation scripts.
-- Codex must have access to the footage and compatible editing tools.
+- The assistant you use must have access to the footage and compatible editing tools.
 - It does not replace human creative judgment, client approval or rights clearance for music, footage, logos and references.
 - Never commit client footage, private project files, credentials or access keys to this repository.
 - This is a community project and is not an official OpenAI product.
