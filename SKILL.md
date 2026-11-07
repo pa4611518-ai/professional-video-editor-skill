@@ -69,7 +69,7 @@ When dialogue is important and local transcription is available, use word- or ph
 
 Before editing, check that each planned change supports the objective and is feasible with available tools. Prefer the simplest effective treatment. If an effect has no clear purpose, omit it.
 
-For multi-scene, dialogue-led, or otherwise complex work, save the plan as `edit-plan.md` in a dedicated working/output folder so it can be followed and checked during execution. For simple edits, a concise internal plan is sufficient. Do not put temporary analysis files beside the source unless that is the project convention.
+For multi-scene, dialogue-led, or otherwise complex work, save the plan as `edit-plan.md` in a dedicated working/output folder so it can be followed and checked during execution. Start from `templates/edit-plan.md` when it is available, then replace every placeholder with facts from the inspected footage. For simple edits, a concise internal plan is sufficient. Do not put temporary analysis files beside the source unless that is the project convention.
 
 ## 4. Execute the plan and control scope
 
@@ -135,7 +135,7 @@ If the user explicitly asks to see the plan, provide a concise timestamped edit 
 
 ## 7. Tool selection and real execution
 
-1. Inspect the actual environment before relying on a tool or dependency. Read `references/tool-selection.md` and choose the least complex toolchain that can meet the brief. When available, run `scripts/inspect_media.sh INPUT OUTPUT_DIR` before editing.
+1. Inspect the actual environment before relying on a tool or dependency. Read `references/tool-selection.md` and choose the least complex toolchain that can meet the brief. When available, run `scripts/inspect_media.sh INPUT OUTPUT_DIR` before editing and read the saved metadata/contact sheet before making editorial claims.
 2. Prefer tools already installed and suitable for the task. Possible tools include FFmpeg/ffprobe, Python video libraries, Remotion, Blender, or available editing/compositing applications.
 3. Do not assume CapCut, Alight Motion, After Effects, paid APIs, generative video models, cloud access, plugins, fonts, or codecs are installed or authorized.
 4. Do not install packages, access external services, upload private media, incur costs, or use credentials without the permissions required by the environment and the user's instructions. Prefer local processing for private source footage when feasible.
@@ -158,7 +158,7 @@ If the user explicitly asks to see the plan, provide a concise timestamped edit 
 
 ## 9. Mandatory quality control
 
-After rendering, verify as much as the environment supports. Use `scripts/validate_export.sh EXPORTED_VIDEO REPORT_DIR` when FFmpeg/ffprobe are available, then inspect its reports rather than treating diagnostic output as an automatic verdict. Read `references/quality-control.md` for the complete review checklist.
+After rendering, verify as much as the environment supports. Use `scripts/validate_export.sh EXPORTED_VIDEO REPORT_DIR` when FFmpeg/ffprobe are available, then inspect its reports rather than treating diagnostic output as an automatic verdict. Read `references/quality-control.md` for the complete review checklist. If the render is longer than a trivial clip, use the source/edit plan to review each intended section rather than only the first, middle, and last frames.
 
 ### File and technical checks
 - Confirm the output exists and is non-empty.
