@@ -1,0 +1,1 @@
+# System files\n.DS_Store\nThumbs.db\n\n# Video-editing artifacts and renders\n*.mp4\n*.mov\n*.mkv\n*.avi\n*.webm\n*.wav\n*.mp3\n*.aac\n*.m4a\n*.srt\n*.vtt\n*.ffprobe.json\n*.contact-sheet.jpg\n\n# Local reports and temporary work\nreports/\noutputs/\nrenders/\nexports/\nmedia/\n.tmp/\n
