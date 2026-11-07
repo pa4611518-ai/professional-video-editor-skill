@@ -1,0 +1,1 @@
+@/home/daytona/workspace/work/professional-video-editor-skill-github/scripts/validate_export.sh
