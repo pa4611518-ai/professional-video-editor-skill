@@ -1,1 +1,6 @@
-@/home/daytona/workspace/work/professional-video-editor-skill-github/agents/openai.yaml
+interface:
+  display_name: "Professional Video Editor"
+  short_description: "Edit, render, and quality-check videos in the current workspace"
+  default_prompt: "Use $professional-video-editor to analyze my source footage, follow my brief, edit and render the final video when possible, and verify the export. Add motion design only when it improves the result."
+policy:
+  allow_implicit_invocation: true
